@@ -1,38 +1,280 @@
-.App {
-  text-align: center;
+
+.body-container{
+  background-color: #d1c6c6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-header{
+  border: 1px solid black;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  height: 4rem;
+  width: 100%;
+  box-shadow:  inset -2px -2px 2px 2px gray;
+
+}
+.page-header>span{
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+
+}
+.create-btn{
+  cursor: pointer;
+  margin-left: 35rem;
+  margin-top: 10rem;
+  height: 5rem;
+  padding: 2rem;
+  border-color: aliceblue;
+  background-color: blue;
+  color: aliceblue;
+  border-radius: 5px;
+  font-size: x-large;
+  
+}
+.create-btn:hover{
+  background-color: white;
+  color: blue;
+  border-color: blue;
+  font-size: x-larger;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* This is the the css for Whole Invoice preview Component*/
+.invoice-preview-container{
+  border: 1px solid black;
+  margin: 4rem 20rem 4rem 20rem ;
+
+  width: auto;
+  padding: 2rem;
+}
+.client-info{
+  padding: 2rem;
+  margin-top: 1rem;
+  background-color: #edecec;
+  width: fit-content;
+  height: 10rem;
+}
+.client-info>div{
+  padding: 4px;
+}
+.client-info>div>span{
+  font-size: large;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*-------------------------------------------------*/
+
+/* This is the the css for InvoiceHeader Component*/
+.header-invoice{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px solid gray;
+}
+.invoice-print{
+  display: flex;
+  
+}
+.print{
+  height: 2rem;
+  width: 4rem;
+  cursor:pointer;
+  margin-right: 1rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.send{
+  height: 2rem;
+  width: 4rem;
+  cursor:pointer;
+  margin-right: 1rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.invoice-print>button{
+  padding: 0.5rem;
+  padding: 4px;
+}
+/*-------------------------------------------------*/
+
+
+/* This is the the css for Sender-Reciever Component*/
+.sender-reciever{
+  display: flex;
+  justify-content: space-between;padding: 0.5rem;
+}
+
+/*-------------------------------------------------*/
+
+
+/* This is the the css for InvoiceHeader Component*/
+
+/*-------------------------------------------------*/
+
+.dates{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 10rem;
+  margin-right: 3rem;
+  width: fit-content;
+}
+
+.notes{
+  width: 20rem;
+  height: 5rem;
+  font-style:italic;
+}
+.notes>p{
+  font-style: italic;
+}
+
+.invoiceNo{
+  border: 1px dotted gray;
+  height: 2rem;
+  margin-top: 7rem;
+  padding: 1rem;
+}
+
+
+
+/* This is the the css for InvoiceForm Component*/
+.form-box{
+  padding: 2rem;
+  height: 60rem;
+  width: 50%;
+  border: 1px solid rgb(197, 165, 165);
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-left: 15rem;
+
+}
+.content-form{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin-top: 1rem;
+
+}
+.address-box{
+  display: flex;
+  flex-direction: column;
+}
+.content-form-input{
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem 15rem;
+
+}
+.input-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  
+}
+.input-element{
+  background-color: #e8e6e6;
+  height: 1.5rem;
+  border: none;
+}
+input.input-container>label{
+  font-weight: 600;
+}
+#address{
+  border: none;
+  background-color: #e8e6e6;
+}
+#submit-content{
+  height: 2rem;
+  margin: 2rem;
+}
+
+
+.add-bill{
+  padding: 1rem;
+  width: 12rem;
+  font-size: large;
+  border-radius: 0.5rem;
+  border-color: #e8e6e6;
+  cursor: pointer;
+
+  }
+.table-form{
+
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.escape{
+  margin-top: 0rem;
+  margin-left: 20rem;
+  padding-right: 1rem;
+}
+.escape>button{
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: blue;
   color: white;
+  border-color: blue;
+}
+.escape>button:hover{
+  cursor: pointer;
+  background-color: white;
+  color: blue;
+  border-color: white;
+}
+/*-------------------------------------------------*/
+
+/* This is the the css for Invoice-Bill table Component*/
+.invoice-bill{
+  height: auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #e4e3e3;
+  margin: 5rem;
+  margin-right: 10rem;
+  box-shadow: 2px;
+}
+.bill-table>tr{
+  display: flex;
+  justify-content: space-around;
+}
+.title-row{
+  display: flex;
+  border-radius: 5px;
+  justify-content: space-around;
+  border-bottom: 3px solid rgb(226, 217, 206);
+
+}
+.title-row>th{
+  padding: 1rem;
+  margin: 0.5rem;
+  justify-content: space-around;
+  
+}
+.item-row{
+  justify-content: space-around;
+  background-color: #f6dede;
+  padding: 1rem;
+  margin: 1rem;
+}
+.sum{
+  margin-left: 25rem;
+  background-color: #aaa6a6;
+  font-size: large;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+/*-------------------------------------------------*/
+
+
+/* This is the the css for P Component*/
+
+
+/*-------------------------------------------------*/
+
+
+/* This is the the css for InvoiceHeader Component*/
+
+
+/*-------------------------------------------------*/
